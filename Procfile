@@ -1,0 +1,1 @@
+web: java -jar target/heroku-java-sample-app-1.0.jar
