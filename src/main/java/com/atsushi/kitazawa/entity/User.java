@@ -1,8 +1,22 @@
 package com.atsushi.kitazawa.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "users")
 public class User {
+    @Id
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "password")
     private String password;
+
+    public User() {
+    }
 
     public User(String name, String password) {
         this.name = name;
