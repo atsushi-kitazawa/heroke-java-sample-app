@@ -15,7 +15,7 @@ public class User {
     @Column(name = "password")
     private String password;
 
-    public User() {
+    private User() {
     }
 
     public User(String name, String password) {
@@ -29,6 +29,10 @@ public class User {
 
     public String password() {
         return password;
+    }
+
+    public void changePassword(String password) {
+        this.password = password;
     }
 
     @Override
