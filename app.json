@@ -1,4 +1,5 @@
 {
     "name": "sample application",
-    "description": "java sample application deploy to heroku.."
+    "description": "java sample application deploy to heroku..",
+    "addons": [ "heroku-postgresql" ]
   }

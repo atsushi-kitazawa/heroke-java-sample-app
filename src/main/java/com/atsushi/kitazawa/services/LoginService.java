@@ -5,12 +5,14 @@ import com.atsushi.kitazawa.exception.UserNotFoundException;
 import com.atsushi.kitazawa.repository.IUserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
 public class LoginService {
 
     @Autowired
+    @Qualifier("database")
     private IUserRepository userRepo;
 
     public boolean login(User user) {

@@ -9,7 +9,7 @@ import com.atsushi.kitazawa.exception.UserNotFoundException;
 
 import org.springframework.stereotype.Repository;
 
-@Repository
+@Repository("inmemory")
 public class InMemoryUserRepository implements IUserRepository {
     private final List<User> userDb = Arrays.asList(new User("user1", "pass1"),
             new User("user2", "pass2"), new User("user3", "pass3"));
