@@ -15,7 +15,7 @@ public class LoginService {
     @Autowired
     // @Qualifier("database")
     // private IUserRepository userRepo;
-    UserRepository userRepo;
+    private UserRepository userRepo;
 
     public boolean login(User user) {
         try {

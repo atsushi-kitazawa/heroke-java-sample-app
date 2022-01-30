@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 public class UserService {
     
     @Autowired
-    UserRepository userRepo;
+    private UserRepository userRepo;
 
     public List<User> getUsers() {
         return userRepo.findAll();
